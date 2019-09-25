@@ -7,7 +7,7 @@ PruebasBinarias. Esta función devuelve una matriz con los valores puntuales y p
 - “VN”: número de verdaderos negativos que se ha obtenido en la prueba. Haciendo referencia a la Tabla 1 es la celda         
 - “FP”: número de falsos positivos que se ha obtenido en la prueba. Haciendo referencia a la Tabla 1 es la celda        
 - “FN”: número de falsos negativos que se ha obtenido en la prueba. Haciendo referencia a la Tabla 1 es la celda 
--“alpha”: nivel de riesgo que se quiere para las estimaciones. Por defecto toma el valor 0.05, lo que corresponde a un nivel de confianza del 95%.
+- “alpha”: nivel de riesgo que se quiere para las estimaciones. Por defecto toma el valor 0.05, lo que corresponde a un nivel de confianza del 95%.
 - “prev”: tipo de estudio que se ha realizado, de cohortes o de casos y controles. Por defecto toma el valor -1 lo que corresponde a un estudio de cohortes. Si se quisiera calcular las medidas de eficacia para un estudio de casos y controles habría que introducir el valor estimado de la prevalencia.
 - “aprox”: como se ha visto para algunas de las medidas de eficacia hay distintos métodos para el cálculo de los intervalos. Con este argumento se decide si se quieren calcular las estimaciones mediante la distribución exacta o la distribución asintótica. Por defecto toma el valor FALSE lo que indica que se calcula la estimación mediante la distribución exacta.
 
@@ -15,13 +15,13 @@ PruebasBinarias. Esta función devuelve una matriz con los valores puntuales y p
 Para estudiar las medidas de una prueba cuya prueba de referencia es imperfecta se implementa la función PruebasBinariasImperfectas. Los argumentos son:
 - “VP”:número de verdaderos positivos que se ha obtenido en la prueba. Haciendo referencia a la Tabla 1 es la celda 
 - “VN”: número de verdaderos negativos que se ha obtenido en la prueba. Haciendo referencia a la Tabla 1 es la celda 
--“FP”: número de falsos positivos que se ha obtenido en la prueba. Haciendo referencia a la Tabla 1 es la celda 
--“FN”: número de falsos negativos que se ha obtenido en la prueba. Haciendo referencia a la Tabla 1 es la celda 
--“Se1”: valor de la sensibilidad de la prueba de referencia.
--“Sp1”: valor de la especificidad de la prueba de referencia
--“alpha”: nivel de riesgo que se quiere para las estimaciones. Por defecto toma el valor 0.05, lo que corresponde a un nivel de confianza del 95%.
--“prev”: como se ha dicho previamente la principal diferencia entre los estudios de casos y controles y los estudios de cohortes reside en la estimación de la prevalencia. Por defecto toma el valor -1. Cuando toma este valor la función asume que es un estudio de cohortes. Si por el contrario se quisieran calcular las medidas de eficacia para un estudio de casos y controles se debe introducir el valor estimado de la prevalencia que se tiene de conocimiento a priori.
--“aprox”: indica si se quiere calcular las estimaciones mediante la distribución exacta o asintótica. Por defecto toma el valor FALSE lo que indica que se calcula mediante la distribución exacta.
+- “FP”: número de falsos positivos que se ha obtenido en la prueba. Haciendo referencia a la Tabla 1 es la celda 
+- “FN”: número de falsos negativos que se ha obtenido en la prueba. Haciendo referencia a la Tabla 1 es la celda 
+- “Se1”: valor de la sensibilidad de la prueba de referencia.
+- “Sp1”: valor de la especificidad de la prueba de referencia
+- “alpha”: nivel de riesgo que se quiere para las estimaciones. Por defecto toma el valor 0.05, lo que corresponde a un nivel de confianza del 95%.
+- “prev”: como se ha dicho previamente la principal diferencia entre los estudios de casos y controles y los estudios de cohortes reside en la estimación de la prevalencia. Por defecto toma el valor -1. Cuando toma este valor la función asume que es un estudio de cohortes. Si por el contrario se quisieran calcular las medidas de eficacia para un estudio de casos y controles se debe introducir el valor estimado de la prevalencia que se tiene de conocimiento a priori.
+- “aprox”: indica si se quiere calcular las estimaciones mediante la distribución exacta o asintótica. Por defecto toma el valor FALSE lo que indica que se calcula mediante la distribución exacta.
 
 
 Roc. Esta función solicita los datos de los enfermos y los sanos que se han recogido en la muestra. Cada uno de estos datos se introduce en los argumentos “casos” y “controles”. Para ampliar la funcionalidad de la función se han incluido diversos argumentos. Para algunos argumentos no se ha explicado la base teórica aun:
